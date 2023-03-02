@@ -1,21 +1,20 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image} from 'react-native';
 
-export default function App() {
+const CoffeShop = () => {
   return (
-    <View style={styles.container}>
-      <Text>CoffeShop</Text>
-      <StatusBar style="auto" />
+    <View>
+     <Text>Bem vindo ao CoffeShop</Text>
+      <Image
+        source={{
+          uri: 'https://images5.alphacoders.com/452/thumbbig-452034.webp',
+        }}
+        style={{width: 600, height: 300}}
+      />
+
     </View>
   );
-}
+};
 
+export default CoffeShop;
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
